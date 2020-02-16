@@ -16,3 +16,8 @@ SELECT shohin_mei, hanbai_tanka, shiire_tanka FROM shohin WHERE hanbai_tanka - s
 
 -- '2'という文字列に対して比較をしているので'10'や'11'も'2'より小さい扱いをされる
 SELECT chr FROM chars WHERE chr > '2';
+-- NULLである行を取得
+SELECT shohin_mei, shiire_tanka FROM shohin WHERE shiire_tanka is NULL;
+
+SELECT shohin_mei, shiire_tanka FROM shohin WHERE shiire_tanka is NOT NULL;
+
