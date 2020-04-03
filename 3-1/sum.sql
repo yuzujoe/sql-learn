@@ -2,3 +2,5 @@
 SELECT SUM(hanbai_tanka) FROM shohin;
 -- NULLは0と同じ扱い
 SELECT SUM(hanbai_tanka), SUM(shiire_tanka) FROM shohin;
+
+SELECT SUM(hanbai_tanka), SUM(DISTINCT hanbai_tanka) FROM shohin;
